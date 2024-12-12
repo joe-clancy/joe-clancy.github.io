@@ -8,6 +8,8 @@ This repository contains all of the supporting material for my ePortfolio, the C
 
 ## Artifact Selection and Enhancement Plan
 
+[Artifact Enhancement Plan](https://github.com/joe-clancy/joe-clancy.github.io/blob/bcd35403f82151bdf44ec323ec3eef8fe8f7dd58/CS%20499%20Enhancement%20Plan.docx)<br/>
+
 ---
 
 ## Code Review Video
