@@ -56,57 +56,80 @@
             background: #333;
             color: #fff;
         }
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%; /* Makes the image responsive */
+            height: auto;
+        }        
     </style>
 </head>
 <body>
     <header>
         <h1>Joe Clancy ePortfolio</h1>
-        <p><a href="mailto::joseph.clancy@snhu.edu" title="joseph.clancy@snhu.edu">joseph.clancy@snhu.edu</a></p>
-        <p>CS499 Computer Science Capstone, Dec 2024</p>
+        <p><a href="mailto::joseph.clancy@snhu.edu" title="joseph.clancy@snhu.edu">joseph.clancy@snhu.edu</a><br>
+            <a href="https://github.com/joe-clancy/joe-clancy.github.io" title="ePortfolio GitHub Project">ePortfolio GitHub Project</a><br>
+            CS499 Computer Science Capstone, Dec 2024</p>
     </header>
     <main>
         <section>
             <p>
-                This repository contains all of the supporting material for my ePortfolio, the CS499 Computer Science Capstone final project. This includes the original software artifacts from previous courses, the enhanced artifacts developed for this course, a video code review of the original artifact, journal and narrative papers discussing my thoughts and process as I completed the work, and the HTML for the final ePortfolio presentation.
-            </p>
-        </section>
-        <hr>
-        <section>
-            <h2>Artifact Selection and Enhancement Plan</h2>
-            <p>
+                During my time in the Southern New Hampshire University Computer Science program, as well as my career in data analytics, I have developed and honed a wide range of skills related to the field of Computer Science. Through the academic program I gained many valuable technical skills, including experience with popular programming languages including Java, C++, and Python. I learned to effectively leverage both SQL and NoSQL databases. I gained familiarity with popular frameworks like Angular, Express and Node.js. <br><br>
+                While these technical skills are important, they represent only the foundation for delivering value using Computer Science expertise. The program also exposed me to common project management approaches used in the software development lifecycle and emphasized the importance of thoughtful requirements gathering and consideration for the needs of stakeholders. Effective communication with team members, project managers, product owners, customers, and other stakeholders was a critical element in the program. I also learned to weigh ethical considerations as part of my decision-making process and in the implementation of new projects, aligning with professional ethical guidelines such as the <a href="https://www.acm.org/code-of-ethics#">Association for Computing Machinery (ACM) Code of Ethics and Professional Conduct</a>.<br><br>
+                As the effective application of Computer Science often involves working with sensitive personal or proprietary information, the importance of strong security practices, as well as adherence to relevant regulatory requirements, was also a point of emphasis. Throughout my time in the Computer Science program, I have internalized the importance of implementing security best practices early in the development process and at every level of a program.<br><br>
+                To showcase my evolving skills in a variety of Computer Science applications, I will present three artifacts from different courses in the program. Broadly, these artifacts will align with the following categories:<br>
+                <ul>
+                    <li>Software Design and Engineering</li>
+                    <li>Algorithms and Data Structures</li>
+                    <li>Databases</li>
+                </ul>
+                For each of these artifacts, I will present an original artifact from earlier in the program. I will perform a video code review of that artifact, discussing its strengths and weaknesses, then I will propose and implement enhancements for that artifact, improving its functionality and aligning it better with professional best practices. Together, these artifacts demonstrate my skill with popular programming languages C++, Java, and Python, my facility with SQL and NoSQL databases, my focus on robust application security, and my ability to add value to end-user workflows.<br><br>
+                My full original artifact enhancement plan document is available here:<br>
                 <a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/bcd35403f82151bdf44ec323ec3eef8fe8f7dd58/CS%20499%20Enhancement%20Plan.docx">
                     Artifact Enhancement Plan
-                </a>
-            </p>
-            <p>
-                This document discusses the artifacts I will use for the ePortfolio, their applicability to the intended course outcomes, and my planned enhancements.
+                </a>                
             </p>
         </section>
         <hr>
         <section>
-            <h2>Code Review Video</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=v0sZYTFMPFI&t=17s" title="Software Design and Engineering Artifact Code Review">Software Design and Engineering Artifact</a></li>
-                <li><a href="https://www.youtube.com/watch?v=v0sZYTFMPFI&t=1155s" title="Algorithms and Data Structure Artifact Code Review Video">Algorithms and Data Structure Artifact</a></li>
-                <li><a href="https://www.youtube.com/watch?v=v0sZYTFMPFI&t=1923s" title="Databases Artifact Code Review Video">Databases Artifact</a></li>
-            </ul>
+            <h2>Software Design and Engineering Artifact</h2>
+            <h3>Original Artifact</h3>
+            <div class="center-image">
+                <img src="assets/inventory_app.PNG" alt="Inventory App">
+            </div>
+            
             <p>
-                This code review video examines the artifacts chosen for this ePortfolio in their original state. I evaluate each artifact according to the SNHU CS 499 Code Review rubric, considering how well the code meets its intended purpose and aligns with best practices.
+                The Software Design and Engineering artifact that I am demonstrating is an Android mobile application for tracking inventory items. The application supports allowing users to create accounts and log in, add items to a database, edit the quantity of items that currently exist in the database, and remove items from the database. The application also optionally supports SMS notifications when stock levels are low. I originally created this artifact for CS360: Mobile Architecture and Programming in August 2024. <br><br>
+                This artifact is an excellent example of my skills in software development and design for several reasons. First, the application supports an end-to-end workflow for a use case that is common across many industries- tracking stock of items- which makes it an ideal example of the value I can add to an organization’s business cases through software development.<br><br>
+                Additionally, because the Android platform is popular across many devices, architectures, and applications, it demonstrates my ability to develop applications with broad versatility to meet many possible user requirements. The application is specifically designed to enable collaboration between multiple users as they track and update the status of a single inventory, enabling accurate and current information to be available to stakeholders. 
             </p>
-        </section>
-        <hr>
-        <section>
-            <h2>Artifact Enhancements</h2>
-            <h3>Software Design and Engineering</h3>
+            <h3>Code Review</h3>
             <p>
+                <a href="https://www.youtube.com/watch?v=v0sZYTFMPFI&t=17s" title="Software Design and Engineering Artifact Code Review">Software Design and Engineering Code Review</a><br><br>
+                This code review video examines the Software Design and Engineering Artifact in its original state. I evaluate the artifact according to the SNHU CS 499 Code Review rubric, considering how well the code meets its intended purpose and aligns with best practices.
+            </p>
+            <h3>Enhanced Artifact</h3>
+            <p>
+                Information security is a critical concern to nearly every industry that relies on computing solutions. To reflect this, I chose to enhance this artifact by adding additional security features to both better align with best practices and allow organizations more precise control over how their data is modified. To achieve these goals, I implemented password hashing to protect user credentials from compromise, applied role-based access controls to user accounts, and implemented the principle of least privilege to critical database functionality such as creating or deleting records. Administrators now have the ability to set the access level of users, restricting some functions only to users who directly require them.
+            </p>
+            <p>
+                The original Software Design and Engineering Enhancement Narrative document is available here:<br>
                 <a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/3db6c7a2df7c1de80ad1eb8fcbe352d32415b318/Software%20Engineering%20Artifact%20Enhanced/3-2%20Milestone%20Software%20Design%20and%20Engineering%20Narrative.docx">
                     Software Design and Engineering Narrative
                 </a>
             </p>
+            <hr>
+            <h2>Algorithms and Data Structures Artifact</h2>
+            <h3>Original Artifact</h3>
+            <h3>Code Review</h3>
             <p>
-                In this document I discuss the original Software Design and Engineering artifact I have chosen for the ePortfolio before demonstrating the enhancements that I performed to it.
+                <a href="https://www.youtube.com/watch?v=v0sZYTFMPFI&t=1155s" title="Algorithms and Data Structure Artifact Code Review Video">Algorithms and Data Structures Code Review</a><br><br>
+                This code review video examines the Algorithms and Data Structures Artifact in its original state. I evaluate the artifact according to the SNHU CS 499 Code Review rubric, considering how well the code meets its intended purpose and aligns with best practices.
             </p>
-            <h3>Algorithms and Data Structures</h3>
+            <h3>Enhanced Artifact</h3>
             <p>
                 <a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/Datastructures%20and%20Algorithms%20Artifact%20Enhanced/4-2%20Milestone%20Algorithms%20and%20Data%20Structure%20Artifact%20Narrative.docx">
                     Algorithms and Data Structures Narrative
@@ -115,29 +138,21 @@
             <p>
                 In this document I discuss the original Algorithms and Datastructures artifact I have chosen for the ePortfolio before demonstrating the enhancements that I performed to it.
             </p>
-            <h3>Databases</h3>
+            <hr>
+            <h2>Databases Artifact</h2>
+            <h3>Original Artifact</h3>
+            <h3>Code Review</h3>
             <p>
+                <a href="https://www.youtube.com/watch?v=v0sZYTFMPFI&t=1923s" title="Databases Artifact Code Review Video">Databases Code Review</a><br><br>
+                This code review video examines the Databases Artifact in its original state. I evaluate the artifact according to the SNHU CS 499 Code Review rubric, considering how well the code meets its intended purpose and aligns with best practices.
+            </p>
+            <h3>Enhanced Artifact</h3>
+            <p>
+                The original Databases Enhancement Narrative document is available here:
                 <a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/Databases%20Artifact%20Enhanced/5-2%20Milestone%20Databases%20Artifact%20Narrative.docx">
                     Databases Narrative
                 </a>
             </p>
-            <p>
-                In this document I discuss the original Databases artifact I have chosen for the ePortfolio before demonstrating the enhancements that I performed to it.
-            </p>
-        </section>
-        <hr>
-        <section>
-            <h2>Journal Reflections</h2>
-            <p>
-                In these documents I discuss my thoughts on several broader issues relevant to Computer Science and my career, as well as document my progress on the ePortfolio.
-            </p>
-            <ul>
-                <li><a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/2-1%20Journal%20What%20Makes%20a%20Productive%20Code%20Review.docx">2-1 Code Review</a></li>
-                <li><a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/3-1%20Journal%20Marketing%20With%20ePortfolios%20and%20Artifact%20Update.docx">3-1 Marketing with ePortfolios</a></li>
-                <li><a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/4-1%20Career%20Choice%20and%20Artifact%20Update.docx">4-1 Career Choice</a></li>
-                <li><a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/5-1%20Journal%20Computer%20Science%20Trends%20and%20Artifact%20Update.docx">5-1 Computer Science Trends</a></li>
-                <li><a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/6-1%20Journal%20Emerging%20Technology%20and%20Artifact%20Update.docx">6-1 Emerging Technology</a></li>
-            </ul>
         </section>
     </main>
     <footer>
