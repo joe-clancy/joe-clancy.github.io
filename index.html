@@ -128,7 +128,7 @@
             <h2>Algorithms and Data Structures Artifact</h2>
             <h3>Original Artifact</h3>
             <div class="center-image">
-                <img src="assets/catalog_app_original.PNG" alt="Course Catalog App">
+                <img src="assets/catalog_app_original.png" alt="Course Catalog App">
             </div>
             <p>
                 The Algorithms and Data Structures artifact I am demonstrating is a C++ program that implements a binary search tree (BST) data structure, ingests a university course catalog from a CSV file, loads the course information into the BST, and allows users to view the entire catalog or single courses. I originally created this artifact for CS300: Data Structures and Algorithms in August 2024. <br><br>
@@ -142,19 +142,19 @@
             <h3>Enhanced Artifact</h3>
             In its original state this artifact does not support an end-to-end workflow for course catalog operations. This is undesirable because it would require users to directly modify the dataset, limiting the value of data validation, or perform updates in separate software, complicating the workflow, in order to take advantage of the artifact. To remedy this limitation, I chose to enhance this artifact with the ability to add, edit, and delete course information and to export the entire dataset to the same or a new CSV. Options to support each of these new functions were added, as well as sub-menus for several of them. The BST implementation also needed to be expanded to accommodate this functionality.<br><br>
             <div class="center-image">
-                <img src="assets/catalog_app_enhanced1.PNG" alt="Course Catalog App">
+                <img src="assets/catalog_app_enhanced1.png" alt="Course Catalog App">
             </div><br>
             Additional error checking was added to ensure that the artifact gracefully handles erroneous user inputs, such as invalid files or file paths. Menu options also do not become available until the user has loaded a dataset, clarifying the correct workflow.<br><br>
             <div class="center-image">
-                <img src="assets/catalog_app_enhanced2.PNG" alt="Course Catalog App">
+                <img src="assets/catalog_app_enhanced2.png" alt="Course Catalog App">
             </div><br>
             The ability to add and edit courses is supported by its own sub-menus. Validation prevents any courses from being added as pre-requisites that do not already exist in the course catalog, ensuring the integrity of the dataset.<br><br>
             <div class="center-image">
-                <img src="assets/catalog_app_enhanced3.PNG" alt="Course Catalog App">
+                <img src="assets/catalog_app_enhanced3.png" alt="Course Catalog App">
             </div><br>
             A confirmation prompt protects users from deleting courses unintentionally. Courses that are pre-requisites for other courses in the catalog cannot be deleted unless the dependent courses are deleted first, preventing phantom course references.<br><br>
             <div class="center-image">
-                <img src="assets/catalog_app_enhanced4.PNG" alt="Course Catalog App">
+                <img src="assets/catalog_app_enhanced4.png" alt="Course Catalog App">
             </div><br>
             The export function will default to the same CSV loaded at the beginning of the workflow, but the option to export to a separate file is also available.                        
             <p>
@@ -167,7 +167,7 @@
             <h2>Databases Artifact</h2>
             <h3>Original Artifact</h3>
             <div class="center-image">
-                <img src="assets/databases_original.PNG" alt="Gravioso Salvare App">
+                <img src="assets/databases_original.png" alt="Gravioso Salvare App">
             </div>
             <p>
                 The Databases artifact I am demonstrating is a Model-View-Controller (MVC) framework implementation using MongoDB, a Jupyter Notebook controller with a Python-based middleware module for database CRUD operations, and a Dash dashboard for users to interact with and visualize the dataset. The application allows users to filter a large dataset based on several client-provided criteria. I originally created this artifact for CS340: Advanced Programming Concepts in June 2024. <br><br>
@@ -181,19 +181,19 @@
             <h3>Enhanced Artifact</h3>
             The original artifact has all of the filter criteria hard-coded into the application. While these criteria are based on client specifications, and thus likely very useful to their needs, they are inflexible, especially if a sustainment plan has not been implemented for the application. To address this limitation, I chose to enhance the artifact by adding the ability to perform custom database queries.<br><br>
             <div class="center-image">
-                <img src="assets/databases_enhanced1.PNG" alt="Gravioso Salvare App">
+                <img src="assets/databases_enhanced1.png" alt="Gravioso Salvare App">
             </div><br>
             Selecting the option to perform a custom query will now present the user with several additional fields that they can use to narrow their search results to something specific or unique. This additional functionality required additional error checking, however, as it is now possible for users to perform queries that do not yield any results. Warnings will now inform users if their search has yielded no results:<br><br>
             <div class="center-image">
-                <img src="assets/databases_enhanced2.PNG" alt="Gravioso Salvare App">
+                <img src="assets/databases_enhanced2.png" alt="Gravioso Salvare App">
             </div><br>
             This enhancement also creates the possibility that a very broad filter will create an extreme number of results, which can create unexpected behavior in some of the data visualizations. To alleviate this, the pie graph will now only show the ten most frequent animal breeds returned by the query. Other breeds will be grouped together into an “other” category, maintaining a clean and readable appearance.<br><br>
             <div class="center-image">
-                <img src="assets/databases_enhanced3.PNG" alt="Gravioso Salvare App">
+                <img src="assets/databases_enhanced3.png" alt="Gravioso Salvare App">
             </div><br>            
             The code for this artifact also required a significant overall in order to align with industry standard best practices. Comments and whitespace were both fully updated and brought in line with a consistent style, improving readability and maintainability, as well as demonstrating professionalism.<br><br>
             <div class="center-image">
-                <img src="assets/databases_enhanced4.PNG" alt="Gravioso Salvare App">
+                <img src="assets/databases_enhanced4.png" alt="Gravioso Salvare App">
             </div><br>             
             <p>
                 The original Databases Enhancement Narrative document is available here:<br>
