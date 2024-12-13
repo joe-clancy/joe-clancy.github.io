@@ -112,6 +112,9 @@
                 This code review video examines the Software Design and Engineering Artifact in its original state. I evaluate the artifact according to the SNHU CS 499 Code Review rubric, considering how well the code meets its intended purpose and aligns with best practices.
             </p>
             <h3>Enhanced Artifact</h3>
+            <div class="center-image">
+                <img src="assets/rbac.PNG" alt="Inventory App">
+            </div>
             <p>
                 Information security is a critical concern to nearly every industry that relies on computing solutions. To reflect this, I chose to enhance this artifact by adding additional security features to both better align with best practices and allow organizations more precise control over how their data is modified. To achieve these goals, I implemented password hashing to protect user credentials from compromise, applied role-based access controls to user accounts, and implemented the principle of least privilege to critical database functionality such as creating or deleting records. Administrators now have the ability to set the access level of users, restricting some functions only to users who directly require them.
             </p>
@@ -124,34 +127,87 @@
             <hr>
             <h2>Algorithms and Data Structures Artifact</h2>
             <h3>Original Artifact</h3>
+            <div class="center-image">
+                <img src="assets/catalog_app_original.PNG" alt="Course Catalog App">
+            </div>
+            <p>
+                The Algorithms and Data Structures artifact I am demonstrating is a C++ program that implements a binary search tree (BST) data structure, ingests a university course catalog from a CSV file, loads the course information into the BST, and allows users to view the entire catalog or single courses. I originally created this artifact for CS300: Data Structures and Algorithms in August 2024. <br><br>
+                This artifact is an excellent example of my skills with algorithms and data structures for several reasons. A CSV is an extremely common format for storing and moving data, especially in smaller enterprises or environments where users have limited access to technical expertise. Parsing a data structure of this type is a common task and presents an opportunity to validate the data it contains. Then loading that data into a more efficient data structure like a BST improves efficiency for future operations. These tasks highlight the value my skills, and computer science in general, can provide to immediately benefit end-users with data-intensive use cases.
+            </p>
             <h3>Code Review</h3>
             <p>
                 <a href="https://www.youtube.com/watch?v=v0sZYTFMPFI&t=1155s" title="Algorithms and Data Structure Artifact Code Review Video">Algorithms and Data Structures Code Review</a><br><br>
                 This code review video examines the Algorithms and Data Structures Artifact in its original state. I evaluate the artifact according to the SNHU CS 499 Code Review rubric, considering how well the code meets its intended purpose and aligns with best practices.
             </p>
             <h3>Enhanced Artifact</h3>
+            In its original state this artifact does not support an end-to-end workflow for course catalog operations. This is undesirable because it would require users to directly modify the dataset, limiting the value of data validation, or perform updates in separate software, complicating the workflow, in order to take advantage of the artifact. To remedy this limitation, I chose to enhance this artifact with the ability to add, edit, and delete course information and to export the entire dataset to the same or a new CSV. Options to support each of these new functions were added, as well as sub-menus for several of them. The BST implementation also needed to be expanded to accommodate this functionality.<br><br>
+            <div class="center-image">
+                <img src="assets/catalog_app_enhanced1.PNG" alt="Course Catalog App">
+            </div><br>
+            Additional error checking was added to ensure that the artifact gracefully handles erroneous user inputs, such as invalid files or file paths. Menu options also do not become available until the user has loaded a dataset, clarifying the correct workflow.<br><br>
+            <div class="center-image">
+                <img src="assets/catalog_app_enhanced2.PNG" alt="Course Catalog App">
+            </div><br>
+            The ability to add and edit courses is supported by its own sub-menus. Validation prevents any courses from being added as pre-requisites that do not already exist in the course catalog, ensuring the integrity of the dataset.<br><br>
+            <div class="center-image">
+                <img src="assets/catalog_app_enhanced3.PNG" alt="Course Catalog App">
+            </div><br>
+            A confirmation prompt protects users from deleting courses unintentionally. Courses that are pre-requisites for other courses in the catalog cannot be deleted unless the dependent courses are deleted first, preventing phantom course references.<br><br>
+            <div class="center-image">
+                <img src="assets/catalog_app_enhanced4.PNG" alt="Course Catalog App">
+            </div><br>
+            The export function will default to the same CSV loaded at the beginning of the workflow, but the option to export to a separate file is also available.                        
             <p>
+                The original Algorithms and Data Structures Artifact Enhancement Narrative document is available here:<br>
                 <a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/Datastructures%20and%20Algorithms%20Artifact%20Enhanced/4-2%20Milestone%20Algorithms%20and%20Data%20Structure%20Artifact%20Narrative.docx">
                     Algorithms and Data Structures Narrative
                 </a>
             </p>
-            <p>
-                In this document I discuss the original Algorithms and Datastructures artifact I have chosen for the ePortfolio before demonstrating the enhancements that I performed to it.
-            </p>
             <hr>
             <h2>Databases Artifact</h2>
             <h3>Original Artifact</h3>
+            <div class="center-image">
+                <img src="assets/databases_original.PNG" alt="Gravioso Salvare App">
+            </div>
+            <p>
+                The Databases artifact I am demonstrating is a Model-View-Controller (MVC) framework implementation using MongoDB, a Jupyter Notebook controller with a Python-based middleware module for database CRUD operations, and a Dash dashboard for users to interact with and visualize the dataset. The application allows users to filter a large dataset based on several client-provided criteria. I originally created this artifact for CS340: Advanced Programming Concepts in June 2024. <br><br>
+                This artifact is a good example of my ability to create an interface with for database, perform advanced queries, and serve specific database records to users in a useful and value-added format. This implementation includes two data visualizations, a pie graph and a map, to contextualize user-selected data.
+            </p>
             <h3>Code Review</h3>
             <p>
                 <a href="https://www.youtube.com/watch?v=v0sZYTFMPFI&t=1923s" title="Databases Artifact Code Review Video">Databases Code Review</a><br><br>
                 This code review video examines the Databases Artifact in its original state. I evaluate the artifact according to the SNHU CS 499 Code Review rubric, considering how well the code meets its intended purpose and aligns with best practices.
             </p>
             <h3>Enhanced Artifact</h3>
+            The original artifact has all of the filter criteria hard-coded into the application. While these criteria are based on client specifications, and thus likely very useful to their needs, they are inflexible, especially if a sustainment plan has not been implemented for the application. To address this limitation, I chose to enhance the artifact by adding the ability to perform custom database queries.<br><br>
+            <div class="center-image">
+                <img src="assets/databases_enhanced1.PNG" alt="Gravioso Salvare App">
+            </div><br>
+            Selecting the option to perform a custom query will now present the user with several additional fields that they can use to narrow their search results to something specific or unique. This additional functionality required additional error checking, however, as it is now possible for users to perform queries that do not yield any results. Warnings will now inform users if their search has yielded no results:<br><br>
+            <div class="center-image">
+                <img src="assets/databases_enhanced2.PNG" alt="Gravioso Salvare App">
+            </div><br>
+            This enhancement also creates the possibility that a very broad filter will create an extreme number of results, which can create unexpected behavior in some of the data visualizations. To alleviate this, the pie graph will now only show the ten most frequent animal breeds returned by the query. Other breeds will be grouped together into an “other” category, maintaining a clean and readable appearance.<br><br>
+            <div class="center-image">
+                <img src="assets/databases_enhanced3.PNG" alt="Gravioso Salvare App">
+            </div><br>            
+            The code for this artifact also required a significant overall in order to align with industry standard best practices. Comments and whitespace were both fully updated and brought in line with a consistent style, improving readability and maintainability, as well as demonstrating professionalism.<br><br>
+            <div class="center-image">
+                <img src="assets/databases_enhanced4.PNG" alt="Gravioso Salvare App">
+            </div><br>             
             <p>
-                The original Databases Enhancement Narrative document is available here:
+                The original Databases Enhancement Narrative document is available here:<br>
                 <a href="https://github.com/joe-clancy/joe-clancy.github.io/blob/35a011f8c88fac507f0e7725573f69709454dd02/Databases%20Artifact%20Enhanced/5-2%20Milestone%20Databases%20Artifact%20Narrative.docx">
                     Databases Narrative
                 </a>
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h2>Code Review Video</h2>
+            <p>
+                The complete Code Review Video can be viewed here:<br>
+                <a href="https://www.youtube.com/watch?v=v0sZYTFMPFI" title="Code Review Video">Code Review Video</a>
             </p>
         </section>
     </main>
